@@ -4,7 +4,7 @@ import pymongo
 app = Flask(__name__)
 
 # Database connection
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+client = pymongo.MongoClient("mongodb+srv://carnage:0123456789@cluster0.yuqtmuo.mongodb.net/")
 db = client["vdb"]
 collection = db["vdb-tables"]
 
