@@ -26,7 +26,12 @@ def submit():
     # Redirect to thank_you.html
     return redirect(url_for('thank_you'))
 
+
+
+
 @app.route('/thank_you')
 def thank_you():
     return render_template('thank_you.html')
 
+if __name__ == '__main__':
+    app.run(debug=True)
